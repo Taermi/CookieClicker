@@ -1,4 +1,4 @@
-package com.github.taermi;
+package com.taermi.Main;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,11 +25,12 @@ public class CounterFile {
 	}
 	
 	public static void setClickCount(Player player, int clickcount) throws IOException{
-		Clicker.set(player.getName() + ".ClickerCount", clickcount);
+		Clicker.set(player.getUniqueId() + ".ClickerCount", clickcount);
+		CounterFile.save();
 	}
 	
 	public static int getClickCount(Player player) {
-		return Clicker.getInt(player.getName() + ".ClickerCount");
+		return Clicker.getInt(player.getUniqueId() + ".ClickerCount");
 	}
 
 }
