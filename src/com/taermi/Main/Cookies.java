@@ -24,10 +24,10 @@ public class Cookies implements CommandExecutor {
 					int count = CounterFile.getClickCount(target);
 					p.sendMessage(ChatColor.GOLD + p.getDisplayName() + ChatColor.GREEN + " has got " + ChatColor.GOLD + count + ChatColor.GREEN + " Cookies!");
 				}else {
-					p.sendMessage("This player isn't online");
+					p.sendMessage(ChatColor.RED + "The Player " + ChatColor.GOLD + target + ChatColor.RED + " couldn't be found!");
+				  }
 				}
 			}
-		}
 		return false;
 	}
 

@@ -1,9 +1,12 @@
 name: CookieClicker
-version: 1.0
+version: 1.1
 description: Cookie Clicker in Minecraft
 author: TermiK
 main: com.taermi.Main.Main
 website: https://github.com/Taermi
 commands:
   cookies:
-    aliases: [clicker, cc, cookie]
+    aliases: [clicker, cc, cookie, cookies]
+    permission: cc.player
+  ccreset:
+    permission: cc.admin
