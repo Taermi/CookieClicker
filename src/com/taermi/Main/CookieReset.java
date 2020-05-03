@@ -21,6 +21,9 @@ public class CookieReset implements CommandExecutor{
 			if(args.length == 1) {
 				try {
 				CounterFile.setClickCount(target, CounterFile.getClickCount(target) - CounterFile.getClickCount(target));
+				CounterFile.setAchieve1(p, false);
+				CounterFile.setAchieve50(p, false);
+				CounterFile.setAchieve100(p, false);
 				CounterFile.setAchieve250(target, false);
 				CounterFile.setAchieve500(target, false);
 				CounterFile.setAchieve1000(target, false);
