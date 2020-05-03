@@ -34,6 +34,35 @@ public class CounterFile {
 	}
 	
 	//250, 500, 1000, 50.000, 100.000, 250.000, 500.000, 1.000.000
+	
+	public static void setAchieve1(Player player, boolean ach1) throws IOException{
+		Clicker.set(player.getUniqueId() + ".Achievement1", ach1);
+		CounterFile.save();
+	}
+	
+	public static boolean getAchieve1(Player player) {
+		return Clicker.getBoolean(player.getUniqueId() + ".Achievement1");
+	}
+	
+	public static void setAchieve50(Player player, boolean ach50) throws IOException{
+	    Clicker.set(player.getUniqueId() + ".Achievement50", ach50);
+		CounterFile.save();
+	}
+	
+	public static boolean getAchieve50(Player player) {
+		return Clicker.getBoolean(player.getUniqueId() + ".Achievement50");
+	}
+	
+	public static void setAchieve100(Player player, boolean ach100) throws IOException{
+		Clicker.set(player.getUniqueId() + ".Achievement100", ach100);
+		CounterFile.save();
+	}
+	
+	
+	public static boolean getAchieve100(Player player) {
+		return Clicker.getBoolean(player.getUniqueId() + ".Achievement100");
+	}
+	
 	public static void setAchieve250(Player player, boolean ach250) throws IOException{
 		Clicker.set(player.getUniqueId() + ".Achievement250", ach250);
 		CounterFile.save();
@@ -113,6 +142,16 @@ public class CounterFile {
 	
 	public static String getName(Player player) {
 		return Clicker.getString(player.getUniqueId() + ".Name");
+	}
+	
+	//Max Cookies
+	public static int getMaxCookies(Player player) {
+		return Clicker.getInt(player.getUniqueId() + ".MaxCookies");
+	}
+	
+	public static void setMaxCookies(Player player, int maxcookies) throws IOException{
+		Clicker.set(player.getUniqueId() + ".MaxCookies", maxcookies);
+		CounterFile.save();
 	}
 	
 	
