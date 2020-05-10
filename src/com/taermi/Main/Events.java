@@ -53,7 +53,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 1) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve1(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "This is your " + ChatColor.GOLD + "first" + ChatColor.GREEN + " Cookie! May the Adventure begin...");
+				}
 				CounterFile.setAchieve1(p, true);
 			}
 		}
@@ -68,7 +70,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 50) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve50(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "50 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve50(p, true);
 			}
 		}
@@ -83,7 +87,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 100) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve100(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "100 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve100(p, true);
 			}
 		}
@@ -98,7 +104,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 250) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve250(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "250 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve250(p, true);
 			}
 		}
@@ -113,7 +121,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 500) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve500(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "500 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve500(p, true);
 			}
 		}
@@ -128,7 +138,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 1000) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve1000(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "1000 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve1000(p, true);
 			}
 		}
@@ -143,7 +155,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 50000) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve50000(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "50.000 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve50000(p, true);
 			}
 		}
@@ -158,7 +172,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 100000) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve100000(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "100.000 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve100000(p, true);
 			}
 		}
@@ -172,7 +188,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 250000) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve250000(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "250.000 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve250000(p, true);
 			}
 		}
@@ -186,7 +204,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 500000) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve500000(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "500.000 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve500000(p, true);
 			}
 		}
@@ -200,7 +220,9 @@ public class Events implements Listener {
 		if (p.getInventory().getItemInMainHand().getType() == Material.COOKIE) {
 			if (CounterFile.getClickCount(p) == 1000000) {
 				p.spigot().sendMessage(net.md_5.bungee.api.ChatMessageType.ACTION_BAR, new TextComponent(message));
+				if(CounterFile.getAchieve1000000(p) == false) {
 				p.sendMessage(ChatColor.GREEN + "You've got already " + ChatColor.GOLD + "1.000.000 Cookies" + ChatColor.GREEN + ", go on!");
+				}
 				CounterFile.setAchieve1000000(p, true);
 			}
 		}
